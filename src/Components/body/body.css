@@ -1,0 +1,66 @@
+.cell:hover {
+    background-color: rgb(15, 26, 26);
+    color: pink;
+}
+
+.cell {
+    background-color: aqua;
+    position: static;
+    display: inline-block;
+    padding: 100px;
+    margin: 6px;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 8vw;
+    text-align: justify;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+}
+
+.newgame {
+    background-color: rgb(118, 118, 223);
+    padding: 10px;
+    margin: 6px;
+    width: 100px;
+    height: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.newgame:hover {
+    background-color: rgb(4, 4, 51);
+    color: pink;
+}
+
+.win {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    text-align: center;
+    font-size: 300px;
+    cursor: pointer;
+}
+
+.winner {
+    animation: fadein 1000ms ease-in-out 0s 1 forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    85% {
+        transform: rotate(-10deg);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
